@@ -1,0 +1,39 @@
+<form (submit)="productos()">
+    <div>
+        <label for="title">Nombre del producto </label>
+        <input type="text" id="title" [(ngModel)]="title_new" name="title_new" />
+    </div>
+<br>
+    <div>
+        <label for="price">Precio </label>
+        <input type="number" id="price" [(ngModel)]="price_new" name="price_new" />
+    </div>
+<br>
+    <div>
+        <label for="description">Descripción </label>
+        <textarea id="description" [(ngModel)]="description_new" name="description_new"></textarea>
+    </div>
+<br>
+    <div>
+        <label for="category">Categoría </label>
+        <input type="text" id="category" [(ngModel)]="category_new" name="category_new" />
+    </div>
+<br>
+    <div>
+        <label for="image">URLimagen </label>
+        <input type="text" id="image" [(ngModel)]="imange_new" name="imange_new" />
+    </div>
+<br>
+    <div>
+        <label for="rate">Rate </label>
+        <input type="number" id="rate" [(ngModel)]="rate" name="rate" />
+    </div>
+<br>
+    <div>
+        <label for="count">Contador </label>
+    <input type="number" id="count" [(ngModel)]="count" name="count" />
+    </div>
+<br>
+    <button type="submit">Agregar Producto</button>
+</form>
+  

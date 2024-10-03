@@ -1,0 +1,18 @@
+<div class="product-list">
+    <div *ngFor=" let producto of productolst; let i =index" class="product-card">
+        <img [src]="producto.image" alt="image" class="product-image">
+        <div class="product-details">
+            <label class="product-id">ID: {{producto.id}}</label>
+            <label class="product-title">Title: {{producto.title}}</label>
+            <label class="product-price">Price: {{producto.price}}</label>
+            <label class="product-description">Description: {{producto.description}}</label>
+            <label class="product-category">Category: {{producto.category}}</label>
+            <label class="product-rate">Rate: {{producto.rating.rate}}</label>
+            <label class="product-count">Count: {{producto.rating.count}}</label>
+
+            <button *ngIf="boton" (click)="comprar(producto)" type="button">Comprar</button>
+            <button *ngIf="eliminar" >Eliminar </button>
+
+        </div>
+    </div>
+</div>

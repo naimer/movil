@@ -1,0 +1,43 @@
+/* my-component.component.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+  }
+  
+  .container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 5px;
+    color: #333;
+  }
+  
+  div {
+    margin-bottom: 20px;
+  }
+  
+  div:last-child {
+    margin-bottom: 0;
+  }
+  
